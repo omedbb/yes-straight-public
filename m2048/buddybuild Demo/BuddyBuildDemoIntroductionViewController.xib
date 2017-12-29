@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BuddyBuildDemoIntroductionViewController">
+            <connections>
+                <outlet property="okButton" destination="NGe-bh-Bnr" id="xsi-QH-l5r"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Feedback-screenshot.png" translatesAutoresizingMaskIntoConstraints="NO" id="HM8-yx-7Rc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGe-bh-Bnr">
+                    <rect key="frame" x="85.5" y="389" width="149" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="dXY-Md-1Xt"/>
+                    </constraints>
+                    <state key="normal" image="OK-button.png"/>
+                    <connections>
+                        <action selector="ok" destination="-1" eventType="touchUpInside" id="nlM-hC-WWq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HM8-yx-7Rc" secondAttribute="trailing" id="9HS-cc-7lP"/>
+                <constraint firstItem="HM8-yx-7Rc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qvy-b6-sPt"/>
+                <constraint firstItem="NGe-bh-Bnr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Vyk-JP-f2b"/>
+                <constraint firstAttribute="bottom" secondItem="HM8-yx-7Rc" secondAttribute="bottom" id="YBm-qR-YuP"/>
+                <constraint firstItem="HM8-yx-7Rc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kw8-CD-4wo"/>
+                <constraint firstAttribute="bottom" secondItem="NGe-bh-Bnr" secondAttribute="bottom" constant="47" id="wwt-MJ-cMp"/>
+            </constraints>
+            <point key="canvasLocation" x="343" y="266"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Feedback-screenshot.png" width="375" height="667"/>
+        <image name="OK-button.png" width="149" height="42"/>
+    </resources>
+</document>
